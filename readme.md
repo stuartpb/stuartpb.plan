@@ -1,13 +1,12 @@
 # stuartpb.plan
 
-As I wrote [three years ago](https://github.com/stuartpb/how-i-roll/commit/00d396aed6bb081519bcc01440b32b197fed18f1), while I don't blog, the stuff I put up on GitHub is the kind of stuff that most devs would blog about. [(See the current revision of that page.](https://github.com/stuartpb/how-i-roll/blob/master/writing.md)
+As I wrote [three years ago](https://github.com/stuartpb/how-i-roll/commit/00d396aed6bb081519bcc01440b32b197fed18f1), while I don't blog, the stuff I put up on GitHub is the kind of stuff that most devs would blog about. [(See the current revision of that page for more details about how I generally write on GitHub.)](https://github.com/stuartpb/how-i-roll/blob/master/writing.md)
 
-However, I've had two key problems in this space for a while:
+However, I've had a few key problems:
 
-- GitHub's discoverability isn't great, and I don't really compensate for it, so there's no real way to know at a glance what I'm up to.
-- *I* don't even know what I'm up to, really.
-
-In the past, the closest thing that worked for me as a persistent tracker of what I'm generally up to were a couple of Trello boards, both of which I've moved to using pretty sporadically, if at all.
+- GitHub's discoverability isn't great, and I don't really compensate for it, so there's no real way for people, when the think of me, to check at a glance what I'm up to. (They can check my profile page, and that may tell them the low-level *actions* I'm taking, but not the higher-level larger *intentions* behind it all.)
+- *I* don't even know what I'm up to, really. I have a tendency to abandon any kind of to-do tracking structure I've experimented with. In the past, the closest thing that worked for me as a persistent tracker of what I'm generally up to were a couple of Trello boards, both of which I've moved to using pretty sporadically, if at all.
+- Whenever I try to write any kind of "post", of the sort you'd post to a blog, I get paralyzed with the question of "How right should I get this before I try putting it in front of people? How will I know when I've said enough? How can I get it right so people won't just read the first pragraph and close the tab, even though it was just a bad opening and the rest was good? How do I *nail* this hook, perfectly?" and end up never publishing, or even trying to write any draft at all.
 
 Anyway, I guess I'm going to try as a 2018 New Years' Resolution something I've had as an idea for a while: imitating John Carmack's .plan file (independently archived on GitHub [here as plain text](https://github.com/ESWAT/john-carmack-plan-archive/tree/master/by_day) and [here as Markdown](https://github.com/oliverbenns/john-carmack-plan)).
 
