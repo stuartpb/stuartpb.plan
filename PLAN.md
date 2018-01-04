@@ -1,1 +1,1 @@
-- write the README for this repo
+next time I've got a minute I should write the one main thing I made github-best-practices for: an explanation that usernames / orgnames on GitHub are not prefixes, because of the fork graph, and if your org is (or you personally are) using them as such, you're doing GitHub wrong, and not playing nice with the concept of contributions in PR form
