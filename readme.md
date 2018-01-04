@@ -18,4 +18,8 @@ I know John didn't invent the finger format, but he *is* probably the most-proli
 - It's a damn ASCII text file. I don't have to futz with any platform toolchain to worry about how I should *style* it, or how I should *present* it, or how I should structure *drafts*, or anything like that.
 - Hell, there's nothing *to* draft, because each latest publication, in its canonical presentation, is meant to *replace* the last one. (Now *that's* how you keep your writing fresh and relevant.)
 
+## File topology
+
 I'm not *actually* going to install this as a `~/.plan` file on any live machine (what, so it can be queried by all those *other* users on my personal desktop?) This Git repository is going to be the canonical location for all of this (I'll try to stick to signed commits, which probably means sticking to the GitHub interface for now - I've yet to set up a GPG infrastructure elsewhere).
+
+The plan file in the repository is named `PLAN.md`, and should be the only capitalized file in the repo, so it sorts first in an ASCIIbetical listing (I've lowercased the filename of README.md accordingly). I might end up populating other files in this repo (though the prospect does make me wary of fouling up those nice aspects of planfiles I just described), but there should always be one main PLAN file summing up everything
