@@ -2,7 +2,9 @@
 
 thinking about generalizing this to 3D, I'm sort of freaking myself out thinking about how inner arcs overlap, and how that probably means there should be a point along the "Y" axis (which would *rotate* in 3D) for the clipping plane (to avoid self-intersecting), and how, like... this only applies on corners...
 
-That's the thing, it only applies on corners, and there's a vanishing intersection point for extrusions where the far face is only slightly angled. OK, I'm fine.
+Except that it doesn't, because if you've got a 15-degree turn, you've got two planes that are intersecting...
+
+Okay, so, for rounding corners, you basically need to have the *inside* angled on the bisector every time, and then you can do the corner interpolation along the *outside only*. Which I basically already knew, which is why I already had the rule "internal corners need to be curved on the path" and everything.
 
 ---
 
