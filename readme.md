@@ -12,7 +12,7 @@ However, I've had a few key problems:
 
 Anyway, I guess I'm going to try as a 2018 New Years' Resolution something I've had as an idea for a while: imitating John Carmack's .plan file (independently archived on GitHub [here as plain text](https://github.com/ESWAT/john-carmack-plan-archive/tree/master/by_day) and [here as Markdown](https://github.com/oliverbenns/john-carmack-plan)).
 
-I know John didn't invent the finger format, but he *is* probably the most-prolifically documented contemporary use of `.plan` as a publishing medium, and I like some of the aspects of this paradigm that are exhibited in these archives:
+[I know John Carmack didn't invent planfiles](http://www.catb.org/jargon/html/P/plan-file.html), but he *is* probably the most-prolifically documented contemporary use of `.plan` as a publishing medium, and I like some of the aspects of this paradigm that are exhibited in these archives:
 
 - The structure of the file itself evolved over time, but the concept of "here's one file that states all my relevant thoughts *right now*" stayed constant.
 - It keeps only as much history on display in the canonical tip as is relevant, change-by-change (the archive / version history can maintain the writing of historical interest).
