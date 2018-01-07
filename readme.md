@@ -24,3 +24,31 @@ Anyway, I guess I'm going to try as a 2018 New Years' Resolution something I've 
 I'm not *actually* going to install this as a `~/.plan` file on any live machine (what, so it can be queried by all those *other* users on my personal desktop?) This Git repository is going to be the canonical location for all of this (I'll try to stick to signed commits, which probably means sticking to the GitHub interface for now - I've yet to set up a GPG infrastructure elsewhere).
 
 The plan file in the repository is named `PLAN.md`, and should be the only capitalized file in the repo (other than CNAME, which I have to include for GitHub Pages to host this at a nice location), so it sorts first in an ASCIIbetical listing (I've lowercased the filename of README.md accordingly). I might end up populating other files in this repo (though the prospect does make me wary of fouling up those nice aspects of planfiles I just described), but there should always be one main PLAN file summing up everything
+
+## What about...
+
+### ...a .project / PROJECT file?
+
+I'm thinking, if I ever do one-line micro-summaries of what *exactly* I'm doing, it'll probably be in the form of updates every fifteen minutes (a la Buckminster Fuller's [Dymaxion Chronofile][]), using some kind of dedicated tool for this purpose. It may or may not go into this repo.
+
+[Dymaxion Chronofile]: https://en.wikipedia.org/wiki/Dymaxion_Chronofile
+
+In the mean-time, I might look into making the first line of PLAN.md like this.
+
+### ...your contact info?
+
+The most relevant contact information for me (including phone number and email address) is already up on [my website](https://stuartpb.com/). I'd add [WebFinger](https://webfinger.net/) support, but it seems to me that it'd be a hell of a lot more useful to add a vCard file first, and then bolt on some kind of querying route if and when anything of note actually calls for such a thing.
+
+### ...your public key(s)?
+
+See https://github.com/stuartpb/pubkeys.
+
+### ...the other kinds of info you'd normally get from `finger`?
+
+My "login name" across various services is tracked at https://stuartpb.com/profiles (which isn't exhaustively up-to-date).
+
+"Idle time" can be sussed out based on my online activity along whatever relevant axis would qualify me as "idle".
+
+I'm not gonna publish the current status of my email inbox (suffice to say, the general torrent of [bacn][] and noise will leave my unread count forever greater than zero).
+
+[bacn]: http://www.bbc.com/news/technology-21830739
