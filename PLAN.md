@@ -8,4 +8,4 @@ After bashing my head against [adding a generalized path extrusion to OpenJSCAD 
 
 ## Schedule
 
-I'm generally available at any time Monday through Friday from noon to 6:00 Pacific time, with the exception of one fixed appointment on Wednesdays from 2:30-3:30 Pacific time.
+I'm generally available at any time Monday through Friday from noon to 6:00 Pacific time, with the exception of one fixed appointment on Wednesdays from 2:30-3:30 Pacific time. (This week, I've moved this appointment to Friday 2018-01-12.)
