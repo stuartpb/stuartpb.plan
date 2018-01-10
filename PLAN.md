@@ -1,11 +1,14 @@
 # Right now (2018-01-09)
 
-I'm currently transitioning my email address from stuart@testtrack4.com (DreamHost) to s@stuartpb.com (FastMail). It's currently held up on my registrar (Porkbun) locking me out, so I can't point the DNS servers for the old domain to FastMail. I'm currently waiting on Porkbun Support to resolve this.
+After looking over https://github.com/stuartpb/how-i-roll/blob/master/starting/apps.md and https://github.com/stuartpb/help-wanted, I'm working right now on putting together a greater index of my projects as I want to pursue them as [unusualstudio-projects](https://github.com/unusualstudio/unusualstudio-projects).
 
-I think I just hit on a breakthrough for my [collected writings][] in that, when I was thinking about the stuff I'd want to add to [github-best-practices][], I remembered that [one of the most useful practices is kicking off issues to informally record ideas you'd like to develop later](https://github.com/stuartpb/collected-writings/commit/14ac32b400dbe1d7a95f507638e26eb13160b9c0), which led me to realize I ought to be doing this with daunting *writing* projects as well. Now, I've got something to show and work off of in *that* repo, and I'm gearing up to go back and add some stuff to "[At Least Three Ways to Do Anything in Three.js](https://github.com/stuartpb/threejs-ways-to-do-it)" as well.
+I'm thinking I'll do it as a directory full of YAML files describing each project by UUID, which will be processed in CI into a commit that regenerates the project page for unusual.studio.
 
-[collected writings]: https://github.com/stuartpb/collected-writings
-[github-best-practices]: https://github.com/stuartpb/github-best-practices
+## Email transition
+
+I'm currently transitioning my email address from stuart@testtrack4.com (DreamHost) to s@stuartpb.com (FastMail).
+
+It's currently held up on my registrar (Porkbun) locking me out, so I can't point the DNS servers for the old domain to FastMail. I'm currently waiting on Porkbun Support to resolve this.
 
 # Schedule
 
