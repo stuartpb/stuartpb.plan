@@ -1,8 +1,11 @@
-# Right now (2018-01-09)
+# Right now (2018-01-13)
 
-After looking over https://github.com/stuartpb/how-i-roll/blob/master/starting/apps.md and https://github.com/stuartpb/help-wanted, I'm working right now on putting together a greater index of my projects as I want to pursue them as [unusualstudio-projects](https://github.com/unusualstudio/unusualstudio-projects).
+I'm working right now on putting together a greater index of projects / ideas I'm working on / interested in as I want to pursue them in [unusualstudio-projects](https://github.com/unusualstudio/unusualstudio-projects) (sort of a lighter-weight successor to https://github.com/stuartpb/help-wanted). I'm structuring it as a directory full of YAML files describing each project, named by UUID.
 
-I'm thinking I'll do it as a directory full of YAML files describing each project by UUID, which will be processed in CI into a commit that regenerates the project page for unusual.studio.
+I started by putting together [a few initial description files][ff2ec85] by hand, but it felt like a *major* slog, so I went ahead and wrote [a couple scripts][83e0c53] that should make transcribing these much easier.
+
+[ff2ec85]: https://github.com/unusualstudio/unusualstudio-projects/commit/ff2ec8501e1de6c1aea396a78e443f7511051275
+[83e0c53]: https://github.com/unusualstudio/unusualstudio-projects/commit/83e0c53d965938c7b17b69c3ce0dcf514e0574ae
 
 ## Email transition
 
