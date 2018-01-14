@@ -11,7 +11,15 @@ I started by putting together [a few initial description files][ff2ec85] by hand
 
 I'm currently transitioning my email address from stuart@testtrack4.com (DreamHost) to s@stuartpb.com (FastMail).
 
-It's currently held up on my registrar (Porkbun) locking me out, so I can't point the DNS servers for the old domain to FastMail. I'm currently waiting on Porkbun Support to resolve this.
+I've got DNS for testtrack4.com going through Fastmail as the authoritative nameservers now (with all Fastmail's default DNS entries), meaning that I've got mail forwarding, but I've broken webhosting.
+
+Most of the web content on testtrack4.com consisted of images I hotlinked on various forums between 2006 and 2010. Most of the inbound links for this content are either themselves defunct (one of the forums many of these images were made for was Achewood's Assetbar) or hopelessly irrelevant (another was the Spamusement User Forums, which are, incredibly, [still around](http://spamusers.com/forums/), on a live system that still openly announces its most active point was on **Dec 11, 2007**). However, I *freaking hate* breaking links out of negligence, so I do want to migrate at least a *subset* of what was up there to a sustainable hosting solution going forward. (Probably the most-active inbound data on testtrack4.com was the list of backwards-compatible programs detected by Windows 7 that I drew up for [this Cracked article](http://www.cracked.com/article_18808_7-reasons-computer-glitches-wont-go-away-ever.html).)
+
+Today, I recognize the importance of hosting images on dedicated block storage (and tracking main site content in a version control system like Git), and if I were to do it all again, I'd have used one (though 2006 was such a different landscape that I pretty much would have had to drag all of Amazon Web Services through a time portal with me, at which point one might rightfully question why this is what I decided to use said time portal *for*).
+
+My current plan is to drag-and-drop the files and directories that I know have some lingering inbound references on the greater Web into FastMail's file storage (there are some PHP installations and school projects that I don't feel like re-hosting) and use them to host testtrack4.com for now; more sustainably, I'd rather have some kind of hosting system where I can upload a map of old incoming filenames to redirect to a bucket like DreamObjects (which I've still got a gigabyte of free hosting with), alongside some versioned text content I can maintain like the aforementioned Windows compatibility list, and maybe a front page headstone explaining what testtrack4.com ever was / could be. (This would actually be a pretty good use for the [spaspec][] I've been putting off working on for so long.)
+
+[spaspec]: https://github.com/spaspec
 
 # Schedule
 
