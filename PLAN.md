@@ -1,6 +1,6 @@
 # Right now (2018-01-13)
 
-I'm working right now on putting together a greater index of projects / ideas I'm working on / interested in as I want to pursue them in [unusualstudio-projects](https://github.com/unusualstudio/unusualstudio-projects) (sort of a lighter-weight successor to https://github.com/stuartpb/help-wanted). I'm structuring it as a directory full of YAML files describing each project, named by UUID.
+I'm working right now on putting together a greater index of projects / ideas I'm working on / interested in as [unusualstudio-projects](https://github.com/unusualstudio/unusualstudio-projects) (sort of a lighter-weight successor to https://github.com/stuartpb/help-wanted). I'm structuring it as a directory full of YAML files describing each project, named by UUID.
 
 I started by putting together [a few initial description files][ff2ec85] by hand, but it felt like a *major* slog, so I went ahead and wrote [a couple scripts][83e0c53] that should make transcribing these much easier.
 
