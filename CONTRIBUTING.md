@@ -1,0 +1,1 @@
+Suggesting that I plan to do something by submitting a pull request against PLAN.md would be a little rude: however, if you want to correct my spelling / proofreading, or suggest an update to the file for *accuracy*, that'd be welcome, I guess. (I'm also not against the notion of discussing tasks / plans as *issues*, so long as they're phrased politely.)
