@@ -23,4 +23,11 @@ My current plan is to drag-and-drop the files and directories that I know have s
 
 # Schedule
 
-I'm generally available at any time Monday through Friday from noon to 6:00 Pacific time, with the exception of one fixed appointment on Wednesdays from 2:30-3:30 Pacific time. (This week, I've moved this appointment to Friday 2018-01-12.)
+I'm generally available at any time Monday through Friday from noon to 6:00 Pacific time, with the exception of one fixed appointment on Wednesdays from 2:30-3:30 Pacific time.
+
+I'm going to be in Florida from 2018-02-03 to 2018-02-10, a trip that I scheduled completely forgetting [the SeattleJS talk on CouchDB I proposed two and a half years ago](https://github.com/seattlejs/seattlejs/issues/38), which I had been scheduled to give on the 8th. I've just now realized this and posted that I'm not going to be able to make that appointment in that thread: we'll see how that develops in the interim.
+
+Another presentation I almost attempted to give when I was out of town, but instead moved forward a month, is a brief story I'm planning to tell at an Open Mic night in [The Royal Room][] in Seattle's Columbia City at P8:30 on 2018-03-08, about watching someone completely fail at [the Disney World version of *Who Wants to Be a Millionaire?*][WWTBAMPI] many years ago. This will be my first time going up on stage to give a completely non-technical monologue since at *least* high school, so if you're in the neighborhood, feel free to come down and watch.
+
+[The Royal Room]: http://theroyalroomseattle.com/
+[WWTBAMPI]: https://en.wikipedia.org/wiki/Who_Wants_to_Be_a_Millionaire_%E2%80%93_Play_It!
