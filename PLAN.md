@@ -56,7 +56,7 @@ My current plan is to drag-and-drop the files and directories that I know have s
 
 # Schedule
 
-I'm generally available at any time Monday through Friday from noon to 6:00 Pacific time, with the exception of one fixed appointment on Wednesdays from 2:30-3:30 Pacific time.
+I'm generally available at any time Monday through Friday from noon to P6:00 Pacific time, with the exception of one fixed appointment on Wednesdays from P2:30-P3:30 Pacific time.
 
 I'm going to be in Florida from 2018-02-03 to 2018-02-10, a trip that I scheduled completely forgetting [the SeattleJS talk on CouchDB I proposed two and a half years ago](https://github.com/seattlejs/seattlejs/issues/38), which I had been scheduled to give on the 8th. I've just now realized this and posted that I'm not going to be able to make that appointment in that thread: we'll see how that develops in the interim.
 
