@@ -13,6 +13,39 @@ I'm currently transitioning my email address from stuart@testtrack4.com (DreamHo
 
 I've got DNS for testtrack4.com going through Fastmail as the authoritative nameservers now (with all Fastmail's default DNS entries), meaning that I've got mail forwarding, but I've broken webhosting.
 
+FastMail has a list of [Sieve][] rules that you can insert custom code into (paired with a UI to manage simpler "Discard", "Forward", and "Organize" custom rules), structured as (from top to bottom):
+
+- `require` extensions
+- [Slot #1 for custom code]
+- `1. Sieve generated for save-on-SMTP identities`
+- `2. Sieve generated for discard rules`
+- `3. Sieve generated for spam protection`
+- [Slot #2 for custom code]
+- `4. Sieve generated for forwarding rules`
+- `5. Sieve generated for vacation responses`
+- [Slot #3 for custom code]
+- `6. Sieve generated for calendar preferences`
+- `7. Sieve generated for organise rules`
+- `8. Sieve generated for pop-link filing`
+- [Slot #4 for custom code]
+
+[Sieve]: https://en.wikipedia.org/wiki/Sieve_(mail_filtering_language)
+
+I've got this Sieve rule in slot #3 (so it takes precedence over any UI-defined "organize" rules) for sorting emails that don't exhibit an awareness of my address update:
+
+```sieve
+### Custom filing code
+# file email into legacy that doesn't contain a modern address
+if allof (
+  address :is ["To","Cc","Resent-To","X-Delivered-To"] "stuart@testtrack4.com",
+  not address :domain :is ["To","Cc","Resent-To","X-Delivered-To"] "stuartpb.com"
+){
+  fileinto "INBOX.legacy";
+}
+```
+
+### Web content migration
+
 Most of the web content on testtrack4.com consisted of images I hotlinked on various forums between 2006 and 2010. Most of the inbound links for this content are either themselves defunct (one of the forums many of these images were made for was Achewood's Assetbar) or hopelessly irrelevant (another was the Spamusement User Forums, which are, incredibly, [still around](http://spamusers.com/forums/), on a live system that still openly announces its most active point was on **Dec 11, 2007**). However, I *freaking hate* breaking links out of negligence, so I do want to migrate at least a *subset* of what was up there to a sustainable hosting solution going forward. (Probably the most-active inbound data on testtrack4.com was the list of backwards-compatible programs detected by Windows 7 that I drew up for [this Cracked article](http://www.cracked.com/article_18808_7-reasons-computer-glitches-wont-go-away-ever.html).)
 
 Today, I recognize the importance of hosting images on dedicated block storage (and tracking main site content in a version control system like Git), and if I were to do it all again, I'd have used one (though 2006 was such a different landscape that I pretty much would have had to drag all of Amazon Web Services through a time portal with me, at which point one might rightfully question why this is what I decided to use said time portal *for*).
