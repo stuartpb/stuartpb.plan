@@ -1,11 +1,17 @@
-# Right now (2018-01-13)
+# Right now (2018-01-16)
 
-I'm working right now on putting together a greater index of projects / ideas I'm working on / interested in as [unusualstudio-projects](https://github.com/unusualstudio/unusualstudio-projects) (sort of a lighter-weight successor to https://github.com/stuartpb/help-wanted). I'm structuring it as a directory full of YAML files describing each project, named by UUID.
+I've added most of my decent ideas (and a fair number of the middling-to-bad ones) from my Projects board into [unusualstudio-projects](https://github.com/unusualstudio/unusualstudio-projects) (see https://github.com/stuartpb/help-wanted#1). Down the line, I expect I'll probably add [my issues in lazyweb-requests](https://github.com/h5bp/lazyweb-requests/issues/created_by/stuartpb), too.
 
-I started by putting together [a few initial description files][ff2ec85] by hand, but it felt like a *major* slog, so I went ahead and wrote [a couple scripts][83e0c53] that should make transcribing these much easier.
+Right now, I'm distracted at a couple of works I'd put together in Trello that would work better as Markdown repos. I've got an idea how I'm going to [migrate Lean Notes][leannotes/leannotes#1], which I've just now created a repo for. (Thinking of a design for one of the tags set me off on a journey through various archives that I largely forgot I had.)
 
-[ff2ec85]: https://github.com/unusualstudio/unusualstudio-projects/commit/ff2ec8501e1de6c1aea396a78e443f7511051275
-[83e0c53]: https://github.com/unusualstudio/unusualstudio-projects/commit/83e0c53d965938c7b17b69c3ce0dcf514e0574ae
+I'm also looking at migrating Understanding Lua, which I have a Trello org with a couple boards for, and I appear to have never documented as something I was interested in, anywhere.
+
+I also got distracted earlier (searching my [list of Collected Writings][collected-writings] to see if I really hadn't made either of those into a repo yet) and re-read [Stewart Brand's Rolling Stone article on the First Spacewar Olympics from 1972][spacewar-article]: following the link on Stewart Brand from that has got me thinking that I might [join The WELL][], as it seems like it might be somewhere I could find some like-minded people who might be interested in some of this stuff I'm doing.
+
+[leannotes/leannotes#1]: https://github.com/leannotes/leannotes/issues/1
+[collected-writings]: https://github.com/stuartpb/collected-writings
+[spacewar-article]: https://github.com/stuartpb/spacewar-article
+[Join The WELL]: https://www.well.com/join/
 
 ## Email transition
 
