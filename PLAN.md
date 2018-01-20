@@ -1,15 +1,28 @@
-# Right now (2018-01-16)
+# Right now (2018-01-20)
 
-I've added most of my decent ideas (and a fair number of the middling-to-bad ones) from my Projects board into [unusualstudio-projects](https://github.com/unusualstudio/unusualstudio-projects) (see https://github.com/stuartpb/help-wanted#1). Down the line, I expect I'll probably add [my issues in lazyweb-requests](https://github.com/h5bp/lazyweb-requests/issues/created_by/stuartpb), too.
+[Right now, Stuart is listening to Van Halen.](https://www.youtube.com/watch?v=YCcLNmOpN3A)
 
-Right now, I'm distracted at a couple of works I'd put together in Trello that would work better as Markdown repos. I've got an idea how I'm going to [migrate Lean Notes][leannotes/leannotes#1], which I've just now created a repo for. (Thinking of a design for one of the tags set me off on a journey through various archives that I largely forgot I had.)
+I woke up Friday morning in a fey mood and ended up spending a couple hours [writing a pitch and treatment for a Black Mirror premise][Let's Talk Tommy]. As so often happens, I got stuck on the third act: I'm hoping that inspiration will strike again in a few days so I can finish it. We'll see.
 
-I'm also looking at migrating Understanding Lua, which I have a Trello org with a couple boards for, and I appear to have never documented as something I was interested in, anywhere.
+[Let's Talk Tommy]: https://github.com/stuartpb/pitches-and-scripts/blob/master/tv-spec-scripts/black-mirror/lets-talk-tommy.md
 
-I also got distracted earlier (searching my [list of Collected Writings][collected-writings] to see if I really hadn't made either of those into a repo yet) and re-read [Stewart Brand's Rolling Stone article on the First Spacewar Olympics from 1972][spacewar-article]: following the link on Stewart Brand from that has got me thinking that I might [join The WELL][], as it seems like it might be somewhere I could find some like-minded people who might be interested in some of this stuff I'm doing.
+---
+
+I've officially added all the pre-Stage-3 projects I care to add from my Projects board on Trello into [unusualstudio-projects](https://github.com/unusualstudio/unusualstudio-projects), plus [my issues in lazyweb-requests](https://github.com/h5bp/lazyweb-requests/issues/created_by/stuartpb) and some assorted repositories I've had lingering around for a while. Right now, I've got 99 projects in the Cloud9 workspace where I've been putting these together: I'm debating scrounging around for one more to make it an even hundred, versus just straight up shipping 99 Projects and just letting that stand.
+
+As much as my next priority should be building the template renderer to list these projects on unusual.studio, the thing I've got my eye on next is [converting Lean Notes from a series of Trello boards to a series of GitHub-Flavored-Markdown files][leannotes/leannotes#1]. I've got some [neat tag images][leannotes tags] I drew up in anticipation of keeping the flavor of the labels from Trello, and I'm itching to put them to use.
+
+I looked at a few of the boards earlier, and I'm realizing that I'm probably going to need to update some of these as I port them, so I realize that this probably isn't going to be a simple afternoon's work; that said, I'm looking to do at least a *few* conversions before building the Unusual Studio Projects list page. (I might also make a couple tweaks to the data structure, namely [renaming the "status" field to "remarks"][unusualstudio-projects#6].)
+
+I'm also looking at migrating Understanding Lua, which I have a Trello org with a couple boards for, and I appear to have never documented as something I was interested in, anywhere. There are only a couple of boards under the org I made for that project, but this is an idea I've been thinking about for a while, and I'm anticipating another burst of sudden inspiration to come when I start working on it again (maybe including some prototyping of what I'm picturing for the Dashseat environment in Google Blocks), so I'm holding it with the same cautious interest as revisiting Lean Notes.
+
+---
+
+A few days ago, I re-read [Stewart Brand's Rolling Stone article on the First Spacewar Olympics from 1972][spacewar-article]: following the link on Stewart Brand from that has got me thinking that I might [join The WELL][], as it seems like it might be somewhere I could find some like-minded people who might be interested in some of this stuff I'm doing.
 
 [leannotes/leannotes#1]: https://github.com/leannotes/leannotes/issues/1
-[collected-writings]: https://github.com/stuartpb/collected-writings
+[leannotes tags]: https://github.com/leannotes/leannotes/tree/master/tags
+[unusualstudio-projects#6]: https://github.com/unusualstudio/unusualstudio-projects/issues/6
 [spacewar-article]: https://github.com/stuartpb/spacewar-article
 [Join The WELL]: https://www.well.com/join/
 
@@ -17,27 +30,11 @@ I also got distracted earlier (searching my [list of Collected Writings][collect
 
 I'm currently transitioning my email address from stuart@testtrack4.com (DreamHost) to s@stuartpb.com (FastMail).
 
-I've got DNS for testtrack4.com going through Fastmail as the authoritative nameservers now (with all Fastmail's default DNS entries), meaning that I've got mail forwarding, but I've broken webhosting.
+I've got DNS for testtrack4.com going through Fastmail as the authoritative nameservers now (with all Fastmail's default DNS entries). Were this a domain I intended to do more with, I'd probably switch to another service like CloudFlare for the nameservers, but since the most important thing testtrack4.com does for me these days is deliver mail from my old email address, I think I'm going to keep the DNS setup this way for the foreseeable future.
 
-FastMail has a list of [Sieve][] rules that you can insert custom code into (paired with a UI to manage simpler "Discard", "Forward", and "Organize" custom rules), structured as (from top to bottom):
-
-- `require` extensions
-- [Slot #1 for custom code]
-- `1. Sieve generated for save-on-SMTP identities`
-- `2. Sieve generated for discard rules`
-- `3. Sieve generated for spam protection`
-- [Slot #2 for custom code]
-- `4. Sieve generated for forwarding rules`
-- `5. Sieve generated for vacation responses`
-- [Slot #3 for custom code]
-- `6. Sieve generated for calendar preferences`
-- `7. Sieve generated for organise rules`
-- `8. Sieve generated for pop-link filing`
-- [Slot #4 for custom code]
+I have my inbox set up with this [Sieve][] rule that knocks any mail addressed only to my old email address into a "legacy" subfolder that I don't check as often as my main inbox (so make sure you're sending mail to the new address if it's important that I see it):
 
 [Sieve]: https://en.wikipedia.org/wiki/Sieve_(mail_filtering_language)
-
-I've got this Sieve rule in slot #3 (so it takes precedence over any UI-defined "organize" rules) for sorting emails that don't exhibit an awareness of my address update:
 
 ```sieve
 ### Custom filing code
@@ -50,13 +47,18 @@ if allof (
 }
 ```
 
+This has worked out pretty well so far, since most of the content I've got going to my old email address at this point is mailing lists and the like that I'm really only vaguely interested in, where I haven't been interested enough to update my email address, but haven't been *disinterested* enough to cancel them.
+
 ### Web content migration
 
-Most of the web content on testtrack4.com consisted of images I hotlinked on various forums between 2006 and 2010. Most of the inbound links for this content are either themselves defunct (one of the forums many of these images were made for was Achewood's Assetbar) or hopelessly irrelevant (another was the Spamusement User Forums, which are, incredibly, [still around](http://spamusers.com/forums/), on a live system that still openly announces its most active point was on **Dec 11, 2007**). However, I *freaking hate* breaking links out of negligence, so I do want to migrate at least a *subset* of what was up there to a sustainable hosting solution going forward. (Probably the most-active inbound data on testtrack4.com was the list of backwards-compatible programs detected by Windows 7 that I drew up for [this Cracked article](http://www.cracked.com/article_18808_7-reasons-computer-glitches-wont-go-away-ever.html).)
+To avoid interminably breaking references to the few pieces of content I had hosted on testtrack4.com, I extracted the directory for testtrack4.com from the tarball of my home directory on DreamHost, removed the `php` directory (since it wouldn't be functional, was never very good, never had inbound references, and had mixed-case conflicts when extracted to a Windows filesystem to boot), and [uploaded it to my FastMail files via WebDav][davnftp] via [Cyberduck][], which I'd installed a few weeks ago to transfer files to my [Toshiba FlashAir][]. I set up hosting [per their instructions][createwebsite] (setting "Publish as" to "Files Only", since these old teenage-days contents are embarrassing enough without the thought of people *browsing* them), and that was just about that.
 
-Today, I recognize the importance of hosting images on dedicated block storage (and tracking main site content in a version control system like Git), and if I were to do it all again, I'd have used one (though 2006 was such a different landscape that I pretty much would have had to drag all of Amazon Web Services through a time portal with me, at which point one might rightfully question why this is what I decided to use said time portal *for*).
+[davnftp]: https://www.fastmail.com/help/files/davnftp.html
+[Cyberduck]: https://cyberduck.io/?l=en
+[Toshiba FlashAir]: https://www.flashair-developers.com/en/documents/api/config/
+[createwebsite]: https://www.fastmail.com/help/files/website.html#createwebsite
 
-My current plan is to drag-and-drop the files and directories that I know have some lingering inbound references on the greater Web into FastMail's file storage (there are some PHP installations and school projects that I don't feel like re-hosting) and use them to host testtrack4.com for now; more sustainably, I'd rather have some kind of hosting system where I can upload a map of old incoming filenames to redirect to a bucket like DreamObjects (which I've still got a gigabyte of free hosting with), alongside some versioned text content I can maintain like the aforementioned Windows compatibility list, and maybe a front page headstone explaining what testtrack4.com ever was / could be. (This would actually be a pretty good use for the [spaspec][] I've been putting off working on for so long.)
+Down the line, I'd like to have some kind of hosting system where I can upload a map of old incoming filenames to redirect to a bucket like DreamObjects (which I've still got a gigabyte of free hosting with), alongside some versioned text content I can maintain like the aforementioned Windows compatibility list, and maybe a front page headstone explaining what testtrack4.com ever was / could be. (This would actually be a pretty good use for the [spaspec][] I've been putting off working on for so long.)
 
 [spaspec]: https://github.com/spaspec
 
@@ -66,7 +68,7 @@ I'm generally available at any time Monday through Friday from noon to P6:00 Pac
 
 I'm going to be in Florida from 2018-02-03 to 2018-02-10, a trip that I scheduled completely forgetting [the SeattleJS talk on CouchDB I proposed two and a half years ago](https://github.com/seattlejs/seattlejs/issues/38), which I had been scheduled to give on the 8th. I've just now realized this and posted that I'm not going to be able to make that appointment in that thread: we'll see how that develops in the interim.
 
-Another presentation I almost attempted to give when I was out of town, but instead moved forward a month, is a brief story I'm planning to tell at an Open Mic night in [The Royal Room][] in Seattle's Columbia City at P8:30 on 2018-03-08, about watching someone completely fail at [the Disney World version of *Who Wants to Be a Millionaire?*][WWTBAMPI] many years ago. This will be my first time going up on stage to give a completely non-technical monologue since at *least* high school, so if you're in the neighborhood, feel free to come down and watch.
+Another presentation I almost attempted to give when I was out of town (before realizing and getting it moved down a month) is a brief story I'm planning to tell at an Open Mic night in [The Royal Room][] in Seattle's Columbia City at P8:30 on 2018-03-08, about watching someone completely fail at [the Disney World version of *Who Wants to Be a Millionaire?*][WWTBAMPI] many years ago. This will be my first time going up on stage to give a completely non-technical monologue since at *least* high school, so if you're in the neighborhood, feel free to come down and watch.
 
 [The Royal Room]: http://theroyalroomseattle.com/
 [WWTBAMPI]: https://en.wikipedia.org/wiki/Who_Wants_to_Be_a_Millionaire_%E2%80%93_Play_It!
