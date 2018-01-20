@@ -18,6 +18,23 @@ I'm also looking at migrating Understanding Lua, which I have a Trello org with 
 
 ---
 
+I'd held off on updating this for a few days because I'd been so busy on Wednesday and Thursday:
+
+- I drew [a rough logo for Dashseat](https://github.com/dashseat/dashseat-artwork/blob/master/dashseat-icon.svg).
+- I [came up with the "SACRED" acronym][SACRED] to describe the principles I consider essential to making a project that can really be built upon, and polished up the rough work I'd done earlier to create a pretty good start for [The SACRED Tenets of Foundational Architecture][sacred-tenets].
+- I hit on a reformulation of the "GitHub Best Practices" I'd been blanking on into something that I could work with, and went on to fill several sections on: [The Biggest Mistakes I See People Make on GitHub][github-mistakes].
+- I got the autocomitter in [barfspace][] [well-polished][autocommit history], and after some thrashing and mania, came to take a moment to develop a more mindful and meditative relation to that long-neglected project (a significant prefigure to the creation of this PLAN file).
+- I resurrected some long-lost work from my old notebook's hard drive that I'd forgotten has been plugged into my desktop this whole time.
+- I installed Atom and GitHub Desktop, which I'll probably talk about here in a little more detail the next time I've got a moment, because I've got some thoughts around them.
+
+[SACRED]: https://github.com/stuartpb/sacred-tenets/issues/1
+[sacred-tenets]: https://github.com/stuartpb/sacred-tenets
+[github-mistakes]: https://github.com/stuartpb/github-mistakes
+[barfspace]: https://github.com/stuartpb/barfspace
+[autocommit history]: https://github.com/stuartpb/barfspace/commits/master/bin/autocommit.sh
+
+---
+
 A few days ago, I re-read [Stewart Brand's Rolling Stone article on the First Spacewar Olympics from 1972][spacewar-article]: following the link on Stewart Brand from that has got me thinking that I might [join The WELL][], as it seems like it might be somewhere I could find some like-minded people who might be interested in some of this stuff I'm doing.
 
 [leannotes/leannotes#1]: https://github.com/leannotes/leannotes/issues/1
