@@ -45,37 +45,11 @@ A few days ago, I re-read [Stewart Brand's Rolling Stone article on the First Sp
 
 ## Email transition
 
-I'm currently transitioning my email address from stuart@testtrack4.com (DreamHost) to s@stuartpb.com (FastMail).
-
-I've got DNS for testtrack4.com going through Fastmail as the authoritative nameservers now (with all Fastmail's default DNS entries). Were this a domain I intended to do more with, I'd probably switch to another service like CloudFlare for the nameservers, but since the most important thing testtrack4.com does for me these days is deliver mail from my old email address, I think I'm going to keep the DNS setup this way for the foreseeable future.
-
-I have my inbox set up with this [Sieve][] rule that knocks any mail addressed only to my old email address into a "legacy" subfolder that I don't check as often as my main inbox (so make sure you're sending mail to the new address if it's important that I see it):
-
-[Sieve]: https://en.wikipedia.org/wiki/Sieve_(mail_filtering_language)
-
-```sieve
-### Custom filing code
-# file email into legacy that doesn't contain a modern address
-if allof (
-  address :is ["To","Cc","Resent-To","X-Delivered-To"] "stuart@testtrack4.com",
-  not address :domain :is ["To","Cc","Resent-To","X-Delivered-To"] "stuartpb.com"
-){
-  fileinto "INBOX.legacy";
-}
-```
-
-This has worked out pretty well so far, since most of the content I've got going to my old email address at this point is mailing lists and the like that I'm really only vaguely interested in, where I haven't been interested enough to update my email address, but haven't been *disinterested* enough to cancel them.
+I'm currently transitioning my email address from stuart@testtrack4.com (DreamHost) to s@stuartpb.com (FastMail). All emait to the former is directed to the latter, with a [Sieve][] rule that knocks any mail addressed only to my old email address into a "legacy" subfolder that I don't check as often as the inbox (so make sure you're sending mail to the new address if it's important that I see it).
 
 ### Web content migration
 
-To avoid interminably breaking references to the few pieces of content I had hosted on testtrack4.com, I extracted the directory for testtrack4.com from the tarball of my home directory on DreamHost, removed the `php` directory (since it wouldn't be functional, was never very good, never had inbound references, and had mixed-case conflicts when extracted to a Windows filesystem to boot), and [uploaded it to my FastMail files via WebDav][davnftp] via [Cyberduck][], which I'd installed a few weeks ago to transfer files to my [Toshiba FlashAir][]. I set up hosting [per their instructions][createwebsite] (setting "Publish as" to "Files Only", since these old teenage-days contents are embarrassing enough without the thought of people *browsing* them), and that was just about that.
-
-[davnftp]: https://www.fastmail.com/help/files/davnftp.html
-[Cyberduck]: https://cyberduck.io/?l=en
-[Toshiba FlashAir]: https://www.flashair-developers.com/en/documents/api/config/
-[createwebsite]: https://www.fastmail.com/help/files/website.html#createwebsite
-
-Down the line, I'd like to have some kind of hosting system where I can upload a map of old incoming filenames to redirect to a bucket like DreamObjects (which I've still got a gigabyte of free hosting with), alongside some versioned text content I can maintain like the aforementioned Windows compatibility list, and maybe a front page headstone explaining what testtrack4.com ever was / could be. (This would actually be a pretty good use for the [spaspec][] I've been putting off working on for so long.)
+I'm using FastMail's web hosting to serve the few static files that were previously available on testtrack4.com. Down the line, I'd like to have the text objects versioned through a Git-tracked repository, and the blobs (ie. images) served through a static blob CDN like S3. (This would actually be a pretty good use for the [spaspec][] I've been putting off working on for so long.)
 
 [spaspec]: https://github.com/spaspec
 
