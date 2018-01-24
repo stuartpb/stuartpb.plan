@@ -47,6 +47,8 @@ A few days ago, I re-read [Stewart Brand's Rolling Stone article on the First Sp
 
 I'm currently transitioning my email address from stuart@testtrack4.com (DreamHost) to s@stuartpb.com (FastMail). All emait to the former is directed to the latter, with a [Sieve][] rule that knocks any mail addressed only to my old email address into a "legacy" subfolder that I don't check as often as the inbox (so make sure you're sending mail to the new address if it's important that I see it).
 
+[Sieve]: https://en.wikipedia.org/wiki/Sieve_(mail_filtering_language)
+
 ### Web content migration
 
 I'm using FastMail's web hosting to serve the few static files that were previously available on testtrack4.com. Down the line, I'd like to have the text objects versioned through a Git-tracked repository, and the blobs (ie. images) served through a static blob CDN like S3. (This would actually be a pretty good use for the [spaspec][] I've been putting off working on for so long.)
