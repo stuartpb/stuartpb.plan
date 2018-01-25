@@ -45,7 +45,18 @@ A few days ago, I re-read [Stewart Brand's Rolling Stone article on the First Sp
 
 ## Email transition
 
-I'm currently transitioning my email address from stuart@testtrack4.com (DreamHost) to s@stuartpb.com (FastMail). All emait to the former is directed to the latter, with a [Sieve][] rule that knocks any mail addressed only to my old email address into a "legacy" subfolder that I don't check as often as the inbox (so make sure you're sending mail to the new address if it's important that I see it).
+I'm currently transitioning my email address from stuart@testtrack4.com (DreamHost) to s@stuartpb.com (FastMail). All email to the former is directed to the latter, with a [Sieve][] rule that knocks any mail addressed only to my old email address into a "legacy" subfolder that I don't check as often as the inbox (so make sure you're sending mail to the new address if it's important that I see it):
+
+```
+### Custom filing code
+# file email into legacy that doesn't contain a modern address
+if allof (
+  address :is ["To","Cc","Resent-To","X-Delivered-To"] "stuart@testtrack4.com",
+  not address :domain :is ["To","Cc"] "stuartpb.com"
+){
+  fileinto "INBOX.legacy";
+}
+```
 
 [Sieve]: https://en.wikipedia.org/wiki/Sieve_(mail_filtering_language)
 
