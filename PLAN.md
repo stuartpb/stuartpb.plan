@@ -1,47 +1,56 @@
-# Right now (2018-01-20)
+# Right now (2018-01-27)
 
-[Right now, Stuart is listening to Van Halen.](https://www.youtube.com/watch?v=YCcLNmOpN3A)
+I'm a little disappointed that I never got around to describing [last week's projects][] (or [my Black Mirror pitch][]) in more detail: hopefully they can all get covered / elaborated on as I work on them more in the future.
 
-I woke up Friday morning in a fey mood and ended up spending a couple hours [writing a pitch and treatment for a Black Mirror premise][Let's Talk Tommy]. As so often happens, I got stuck on the third act: I'm hoping that inspiration will strike again in a few days so I can finish it. We'll see.
+[last week's projects]: https://github.com/stuartpb/stuartpb.plan/commit/b3fda4df84873bc244cab066f87bfd19e6dd2a54
+[my Black Mirror pitch]: https://github.com/stuartpb/pitches-and-scripts/blob/master/tv-spec-scripts/black-mirror/lets-talk-tommy.md
 
-[Let's Talk Tommy]: https://github.com/stuartpb/pitches-and-scripts/blob/master/tv-spec-scripts/black-mirror/lets-talk-tommy.md
+I made [a desktop dock for my phone][dockitall] earlier this week, having found no parametric OpenSCAD charging docks on Wikipedia and not really being satisfied with the existing Pixel 2 XL docks on Thingiverse. I was originally plan on rewriting it to use additive geometry instead of the increasingly-byzantine geometry used in the current rough draft, then maybe re-printing it with some tweaked parameters and/or better quality and/or new material: however, the parameters I initially printed with were good enough (after wrapping the tip of the cable in double-stick tape), and I've kind of moved on for now.
 
----
+[dockitall]: https://github.com/stuartpb/dockitall
 
-I've officially added all the pre-Stage-3 projects I care to add from my Projects board on Trello into [unusualstudio-projects](https://github.com/unusualstudio/unusualstudio-projects), plus [my issues in lazyweb-requests](https://github.com/h5bp/lazyweb-requests/issues/created_by/stuartpb) and some assorted repositories I've had lingering around for a while. Right now, I've got 99 projects in the Cloud9 workspace where I've been putting these together: I'm debating scrounging around for one more to make it an even hundred, versus just straight up shipping 99 Projects and just letting that stand.
+I made a model for [a broken piece from the coffee maker I sometimes use for tea][b.scad] (I only use an AeroPress for coffee: it's bad enough for my teeth without the acidity of drip brewing), and have done a little initial work on making something to put over the broken hinge on my Brita pitcher lid (nothing workable enough to commit and push yet, though), which I'd put alongside it in the same repository.
 
-As much as my next priority should be building the template renderer to list these projects on unusual.studio, the thing I've got my eye on next is [converting Lean Notes from a series of Trello boards to a series of GitHub-Flavored-Markdown files][leannotes/leannotes#1]. I've got some [neat tag images][leannotes tags] I drew up in anticipation of keeping the flavor of the labels from Trello, and I'm itching to put them to use.
+[b.scad]: https://github.com/stuartpb/fiddly-bits/blob/master/b.scad
 
-I looked at a few of the boards earlier, and I'm realizing that I'm probably going to need to update some of these as I port them, so I realize that this probably isn't going to be a simple afternoon's work; that said, I'm looking to do at least a *few* conversions before building the Unusual Studio Projects list page. (I might also make a couple tweaks to the data structure, namely [renaming the "status" field to "remarks"][unusualstudio-projects#6].)
+I also started writing up files for [a variant of Tic-Tac-Toe I used to play in my grade school days][nuketactoe], under the idle curiosity of whether or not its distribution of scoring made it a "dumb" game (ie. one in which it's almost always a tie, or some other such defect), or if I was actually on to something (after a comment exchange on Reddit led me to read about other variants like [Ultimate Tic-Tac-Toe][] on Wikipedia and find no mention of the game I'd played).
 
-I'm also looking at migrating Understanding Lua, which I have a Trello org with a couple boards for, and I appear to have never documented as something I was interested in, anywhere. There are only a couple of boards under the org I made for that project, but this is an idea I've been thinking about for a while, and I'm anticipating another burst of sudden inspiration to come when I start working on it again (maybe including some prototyping of what I'm picturing for the Dashseat environment in Google Blocks), so I'm holding it with the same cautious interest as revisiting Lean Notes.
+[nuketactoe]: https://github.com/stuartpb/nuketactoe
+[Ultimate Tic-Tac-Toe]: https://en.wikipedia.org/wiki/Ultimate_tic-tac-toe
 
----
+I'm planning on rewriting the README for [barfspace][] to better reflect how I'm currently holding it (as a space for unpublished drafts that may or may not be perpetually-unpublished, on a case-by-case and subject-to-change basis), rather than a manic allusion to the thoughts I had when I was creating / last reworking it (taking into account some of the understandings I've come to about my own discomfort with the bleeding-edge typing-before-thinking style I originally had in mind around it).
 
-I'd held off on updating this for a few days because I'd been so busy on Wednesday and Thursday:
-
-- I drew [a rough logo for Dashseat](https://github.com/dashseat/dashseat-artwork/blob/master/dashseat-icon.svg).
-- I [came up with the "SACRED" acronym][SACRED] to describe the principles I consider essential to making a project that can really be built upon, and polished up the rough work I'd done earlier to create a pretty good start for [The SACRED Tenets of Foundational Architecture][sacred-tenets].
-- I hit on a reformulation of the "GitHub Best Practices" I'd been blanking on into something that I could work with, and went on to fill several sections on: [The Biggest Mistakes I See People Make on GitHub][github-mistakes].
-- I got the autocomitter in [barfspace][] [well-polished][autocommit history], and after some thrashing and mania, came to take a moment to develop a more mindful and meditative relation to that long-neglected project (a significant prefigure to the creation of this PLAN file).
-- I resurrected some long-lost work from my old notebook's hard drive that I'd forgotten has been plugged into my desktop this whole time.
-- I installed Atom and GitHub Desktop, which I'll probably talk about here in a little more detail the next time I've got a moment, because I've got some thoughts around them.
-
-[SACRED]: https://github.com/stuartpb/sacred-tenets/issues/1
-[sacred-tenets]: https://github.com/stuartpb/sacred-tenets
-[github-mistakes]: https://github.com/stuartpb/github-mistakes
 [barfspace]: https://github.com/stuartpb/barfspace
-[autocommit history]: https://github.com/stuartpb/barfspace/commits/master/bin/autocommit.sh
 
----
+I've started work on the Harriet Tubman stamp project I previously posted [as an Unusual Studio seed][b0328876] (mostly because, having found all the pieces I would need to begin the undertaking, I've been reticent to spend any $20 bills without one): I'm planning on pushing a first commit for it once I've dialed my first-draft approach into the right size (should be ready by tomorrow).
 
-A few days ago, I re-read [Stewart Brand's Rolling Stone article on the First Spacewar Olympics from 1972][spacewar-article]: following the link on Stewart Brand from that has got me thinking that I might [join The WELL][], as it seems like it might be somewhere I could find some like-minded people who might be interested in some of this stuff I'm doing.
+One thing I'm thinking I'm going to tackle before the next phase in the Tubman stamp project is a project I've been sitting on for a while to make a UI for https://github.com/jankovicsandras/imagetracerjs: working on that made me think about how, working on static-page apps again (it's been a while), how I think such projects should be architected (with devs targeting only the very latest releases of evergreen browsers, and tooling filling in every other browser release in the world), and writing an articl about that: thinking about writihng *that* got me thinking about writing *here*, which is how I ended up editing this right now.
+
+Anyway, it's late and I've still got more stuff to jot down, so I'll hold off on posting about that backfilling methodology &c until tomorrow.
+
+Thinking about the way that I'm handling and planning this project, versus how [its Adafruit inspiration][Adafruit article] was handled (with only a rough draft being published and the final iteration being unmentioned but for some photographs implying it was the product of the documented process) have given me [some thoughts to write up in sacred-tenets][].
+
+[b0328876]: https://github.com/unusualstudio/unusualstudio-projects/blob/ea2dc1fdfd611025b825120839aa5b59dc0e533e/projects/b0328876-0695-4750-8948-3852b5511ae6.yaml
+[Adafruit article]: https://blog.adafruit.com/2017/10/12/turn-your-20s-into-tubmans-with-this-diy-3-d-printed-stamp-wired-adafruit-ustreasury-stevenmnuchin1/
+[some thoughts to write up in sacred-tenets]: https://github.com/stuartpb/sacred-tenets/commit/a4baae577dc3c014cdb5641af20d138e1859377d
+
+My plan to [convert Lean Notes from a series of Trello boards to a series of GitHub-Flavored-Markdown files][leannotes/leannotes#1] has kind of run out of steam for the moment. I think I'd rather try my hand at fully translating the Understanding Lua boards / org to GitHub first; I could have sworn I'd made a repo for it under https://github.com/dashseat, but I guess I must have opened the tab to do so and then ended up Tabalanching it away. (I should also think about making a repo there for Google Blocks data.)
 
 [leannotes/leannotes#1]: https://github.com/leannotes/leannotes/issues/1
-[leannotes tags]: https://github.com/leannotes/leannotes/tree/master/tags
-[unusualstudio-projects#6]: https://github.com/unusualstudio/unusualstudio-projects/issues/6
-[spacewar-article]: https://github.com/stuartpb/spacewar-article
-[Join The WELL]: https://www.well.com/join/
+
+I'm not quite ready to write about using Atom just yet: all I have to say about GitHub Desktop right now is that I've got [one major issue with it][desktop/desktop#3841].
+
+[desktop/desktop#3841]: https://github.com/desktop/desktop/issues/3841
+
+## Unusual Studio
+
+I've got [99 projects][], but the list ain't one: I still haven't made any progress on rendering the project data into an easy-reading page format. This should be my top priority for the next week, if my preparations ahead of my trip to Florida don't get in the way (see "Schedule" below).
+
+[99 projects]: https://github.com/unusualstudio/unusualstudio-projects/tree/ea2dc1fdfd611025b825120839aa5b59dc0e533e/projects
+
+I'm still drafting [thoughts on the project schema][]: figuring out whether I want stage 3 projects to be separated out of the main list or not feels like it's probably the biggest blocker for me (as considering this is stopping me from adding things like my phone dock project above, for instance).
+
+[thoughts on the project schema]: https://github.com/unusualstudio/unusualstudio-projects/issues?q=is%3Aissue+is%3Aopen+label%3A%22model+%2F+schema%22
 
 ## Email transition
 
@@ -65,6 +74,23 @@ if allof (
 I'm using FastMail's web hosting to serve the few static files that were previously available on testtrack4.com. Down the line, I'd like to have the text objects versioned through a Git-tracked repository, and the blobs (ie. images) served through a static blob CDN like S3. (This would actually be a pretty good use for the [spaspec][] I've been putting off working on for so long.)
 
 [spaspec]: https://github.com/spaspec
+
+## The WELL
+
+Earlier this month, I re-read [Stewart Brand's Rolling Stone article on the First Spacewar Olympics from 1972][spacewar-article]: following the link on Stewart Brand from that has got me thinking that I might [join The WELL][], as it seems like it might be somewhere I could find some like-minded people who might be interested in some of this stuff I'm doing.
+
+[spacewar-article]: https://github.com/stuartpb/spacewar-article
+[Join The WELL]: https://www.well.com/join/
+
+## Boring personal developments
+
+I roasted some green coffee beans in a saucepan on Monday morning: they've tasted good, but I don't know if I'd describe the taste as being anything better than other whole beans I've bought pre-roasted. (I guess my intention in buying these beans green was that I was thinking they'd last longer? I don't know.)
+
+I went down to my building's fitness center Thursday and did some weight lifting while catching up on Slow Burn (lifting 3-and-5 pound weights while not even working up a sweat). I did a bunch of crunches, thinking about how I was probably doing them insufficiently, as I was barely feeling anything and was barely moving: today, the muscles at the bottom of my ribcage hurt, so I probably just need to work on my horribly-emaciated abs.
+
+In general, I ought to read up a little: it's not like excercise is an under-documented subject, and I really have no idea what I'm doing when I try it right now. I use fitness equipment right now the way I wrote web pages ten to fifteen years ago: having no idea what I'm doing, clumsily imitating a couple things I vagely remember seeing clips of, accomplishing barely anything, and grossly squandering the vast array of educational and material resources available to me.
+
+My PC speaker started going off a lot tonight, so I pulled it off the motherboard for now. Next time I can power the system down, I'll take a closer look at the motherboard and see if I can figure out what's going wrong.
 
 # Schedule
 
