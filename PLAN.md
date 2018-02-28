@@ -1,23 +1,29 @@
-# Right now (2018-02-12)
+# Right now (2018-02-27)
 
-I just got back from a week-long trip to Florida. In the run-up to the trip, I'd been thinking I *might* pursue a few things described here while I was on vacation; I ended up not touching any of them, which I'm fine with (it was a vacation, after all). Now, I'm focusing on getting back into the swing of things.
+I've been pretty depressed for the last couple weeks, at all the things I said I was going to do within the week after I got back from Florida and then didn't get around to. However, I've gotten a fair amount of it done in the intervening two weeks (one of the things that writing this planfile helps me with is realizing that I'm not as unproductive as I think I am), and I'm gearing up to tackle the rest.
 
-One of the nights while I was down there, I had a talk that touched on some of the themes contained in [the Black Mirror pitch I started writing a few weeks ago][Let's Talk Tommy] (namely [parentification][]), and it's got me thinking that I should maybe revisit that aspect of the pitch, elucidating the problems therein in more detail.
+I'm making a point to watch [Gattaca][] some time this week to make sure it doesn't overlap too much with [the Black Mirror pitch I put together in January][Let's Talk Tommy]. I still haven't written a third act, and this is a big part of that: seeing a script that concludes by clumsily suggesting themes that are better articulated in other work, with more thought beyond them, is one of the most embarassing and humiliating (on the behalf of the author) situations I encounter as a viewer, and I'm mortified at the prospect of comitting such a mistake myself (even seeing that, on consulting that Wikipedia article, Gattaca apparently didn't have as wide of an audience as I thought).
 
+[Gattaca]: https://en.wikipedia.org/wiki/Gattaca
 [Let's Talk Tommy]: https://github.com/stuartpb/pitches-and-scripts/blob/master/tv-spec-scripts/black-mirror/lets-talk-tommy.md
-[parentification]: https://en.wikipedia.org/wiki/Parentification
 
-I'm planning on rewriting the README for [barfspace][] to better reflect how I'm currently holding it (as a space for unpublished drafts that may or may not be perpetually-unpublished, on a case-by-case and subject-to-change basis), rather than a manic allusion to the thoughts I had when I was creating / last reworking it (taking into account some of the understandings I've come to about my own discomfort with the bleeding-edge typing-before-thinking style I originally had in mind around it).
+Just rewrote the README for [barfspace][]. I still don't know a really clear way to describe the nature of how I intend to use it, but what's there now's as good as anything, I guess, and I've worked out the biggest issues I had with it (that it had previously drawn me into something of a corner making it sound like the sole purpose of the repo was shitposts).
 
 [barfspace]: https://github.com/stuartpb/barfspace
 
-Still need to write about [the thoughts I had on a mechanism for providing extended browser support as I briefly flirted with in tracercore][3d11cd9]: that'll probably go in barfspace, at least as incubation until I've got a full, coherent statement explaining my thoughts.
+I'm [working on migrating the Plushu sandbox to the CNCF Cluster](https://github.com/plushu/sandbox.plushu.org/issues/2): the sandbox itself is ready, but I still haven't deactivated the droplet on DigitalOcean, and I haven't set up a watchdog reset timer for the new server. (The old timer will be deactivated when I cancel my DreamHost hosting, as described below.)
 
-[3d11cd9]: https://github.com/stuartpb/tracercore/commit/3d11cd930329336d120194f0e49646fa06323f4c
+I've written the first few lines of [how I think web apps should be written](https://github.com/stuartpb/barfspace/blob/master/evergreen-targeting.md), but I haven't gone into more detail on it yet.
 
-My plan to [convert Lean Notes from a series of Trello boards to a series of GitHub-Flavored-Markdown files][leannotes/leannotes#1] has kind of run out of steam for the moment. I think I'd rather try my hand at fully translating the Understanding Lua boards / org to GitHub first; I could have sworn I'd made a repo for it under https://github.com/dashseat, but I guess I must have opened the tab to do so and then ended up Tabalanching it away. (I should also think about making a repo there for Google Blocks data.) I'm going to see if I can port that content tonight (as it's only a couple of boards).
+I wrote [an outline for Understanding Lua][understanding-lua], my graphic-novel introduction to programming, based on the Trello boards I had created for it: as I started to copy-paste into the file, I realized how half-baked most of the notes I'd made on Trello were, and started filing them as Issues instead. It's yet to be seen if this will be a continued issue as I attemp to [convert Lean Notes in the same manner][leannotes/leannotes#1]: I may end up needing to make issues for entire *boards* in Lean Notes (where the issues in Understanding Lua were generally for *lists*).
 
+[understanding-lua]: https://github.com/dashseat/understanding-lua
 [leannotes/leannotes#1]: https://github.com/leannotes/leannotes/issues/1
+
+After [figuring out how to check the default key installed in Chrome's SSH client][stutendo petlog 2018-02-15], I confirmed that there were, in fact, no keypairs generated or installed on either of my Chromebooks, and ended up throwing together https://initkey.com/ and using it to generate [keypairs for each][pubkey commits].
+
+[stutendo petlog 2018-02-15]: https://github.com/stuartpb/petlogs/blob/master/petlog-stutendo.md#2018-02-15
+[pubkey commits]: https://github.com/stuartpb/pubkeys/compare/70d3b926d5ad3c3af9c2441f2cf7c0bd4499a6a1...de1db1f8b5323a5c4230a9ca78afc79279d91443
 
 I'm not quite ready to write about using Atom just yet: all I have to say about GitHub Desktop right now is that I've got [one major issue with it][desktop/desktop#3841], which I currently need to describe to the GitHubber who got roped into the issue via a typo (as they've had the only expression of interest in actually *understanding* the issue in the thread).
 
@@ -25,21 +31,21 @@ I'm not quite ready to write about using Atom just yet: all I have to say about 
 
 ## Unusual Studio
 
-I've added/updates most of the projects I've undertaken in the last couple weeks to https://github.com/unusualstudio/unusualstudio-projects/ (which makes it more workable to cut mentions of them from this Planfile), but I still haven't made any progress on rendering the project data into an easy-reading page format. Finishing this is my top priority this week.
+I wrote a rendered page for my project list: it's live now as https://unusual.studio/projects/.
 
-I'm still drafting [thoughts on the project schema][]: figuring out whether I want stage 3 projects to be separated out of the main list or not feels like it's probably the biggest blocker for me (as considering this is stopping me from adding things like my phone dock project described below, for instance).
+I'm still drafting [thoughts on the project schema][]: the big question I have now is how I want to handle "stage 3" projects, if I want them included in with the rest of the projects on the list, or if I want them listed separately.
 
 [thoughts on the project schema]: https://github.com/unusualstudio/unusualstudio-projects/issues?q=is%3Aissue+is%3Aopen+label%3A%22model+%2F+schema%22
 
 ## 3D Printing
 
-My Qidi Tech I has been shaking violently (or at least, violently enough to audibly rattle) on the X axis whenever it starts a new layer: I had been seeing X shifting in some of my prints, but had been attributing it to too-fast print speeds. After searching for [similar symptoms][] and finding people attribute this kind of shaking to faulty cables, I now think that this is probably being cause by some kind of brownout/undervolting in the supply of power (since it only happens for a few seconds after actuating the Z stepper). 
+My Qidi Tech I has been shaking violently (or at least, violently enough to audibly rattle) on the X axis whenever it starts a new layer: I had been seeing X shifting in some of my prints, but had been attributing it to too-fast print speeds. After searching for [similar symptoms][] and finding people attribute this kind of shaking to faulty cables, I now think that this is probably being cause by some kind of brownout/undervolting in the supply of power (since it only happens for a few seconds after actuating the Z stepper).
 
 [similar symptoms]: https://www.3dhubs.com/talk/thread/grinding-noise-qidi-tech
 
-I tried reconfiguring the power hookup (so that it's only going through one power strip), but that didn't resolve the issue, so I'm planning on emailing Qidi Tech support about this some time this week.
+I tried reconfiguring the power hookup (so that it's only going through one power strip), but that didn't resolve the issue. I'm planning on emailing Qidi Tech support about this some time this week: all my other 3D printing projects are on hold until I can get this issue resolved.
 
-If I can get the issues with my printer sorted out, I want to resume work on [Project Araminta][] (the name I'd been searching for for the DIY-Harriet-Tubman-$20-bill project I've been working on, which I only realized shortly after posting my 2018-02-02 update). I want to try making a mold for the [stamp blocks][B001ASSAMG] that I bought: I'm also thinking about printing the stamp in a material with some woodfill (which might make it more porous and amenable to stamping, ie. a woodblock print), or reflowing the design to work as a stencil. (Another thing I did after posting the 2018-02-02 update was try printing the stamp entirely in PLA: it worked *even worse than the TPU stamps*, so that's a non-starter. I *might* try doing it again in ABS, but I wouldn't expect that much of a difference.)
+Once I get the issues with my printer sorted out, I want to resume work on [Project Araminta][]. I want to try making a mold for the [stamp blocks][B001ASSAMG] that I bought: I'm also thinking about printing the stamp in a material with some woodfill (which might make it more porous and amenable to stamping, ie. a woodblock print), or reflowing the design to work as a stencil.
 
 [Project Araminta]: https://github.com/stuartpb/project-araminta
 [B001ASSAMG]: https://www.amazon.com/gp/product/B001ASSAMG
@@ -57,9 +63,10 @@ I bought [some sticky pads][B06XBNBFLW] for [the desktop dock I made for for my 
 [B06XBNBFLW]: https://www.amazon.com/gp/product/B06XBNBFLW
 [dockitall]: https://github.com/stuartpb/dockitall
 
-When I tried to print [a couple calicats as gifts for my parents based on their own cats][custom-cats], I ended up running into problems with the machine code output by all the slicers I tried (Cura, for instance, ended up printing on entirely different sides of the build plate); since I was short on time, I ended up falling back to MakerWare, which did a lousy job (many of the finer details vanishing altogether in slicing), but at least produced *something*. At some point, I'd like to revisit this dual-extrusion issue and see if I can track down the precise point of failure to resolve the problem (though I'm probably not going to tackle this until I've worked out all the other problems described above).
+When I tried to print [a couple calicats as gifts for my parents based on their own cats][custom-cats], I ended up running into problems with the machine code output by all the slicers I tried (Cura through OctoPrint, for instance, ended up [printing on entirely different sides of the build plate][issue #5 comment]); since I was short on time, I ended up falling back to MakerWare, which did a lousy job (many of the finer details vanishing altogether in slicing), but at least produced *something*. At some point, I'd like to revisit this dual-extrusion issue and see if I can track down the precise point of failure to resolve the problem (though I'm probably not going to tackle this until I've worked out all the other problems described above).
 
 [custom-cats]: https://github.com/stuartpb/custom-cats
+[issue #5 comment]: https://github.com/Ghostkeeper/X3GWriter/issues/5#issuecomment-366365176
 
 ## Email transition
 
@@ -83,6 +90,20 @@ if allof (
 I'm using FastMail's web hosting to serve the few static files that were previously available on testtrack4.com. Down the line, I'd like to have the text objects versioned through a Git-tracked repository, and the blobs (ie. images) served through a static blob CDN like S3. (This would actually be a pretty good use for the [spaspec][] I've been putting off working on for so long.)
 
 [spaspec]: https://github.com/spaspec
+
+### Closing my DreamHost account
+
+I'm looking to close my DreamHost account: I missed the rebilling date (it happened on February 21, when I thought it was February 22), but I'm trying to get things conclusively wrapped up close to then.
+
+The big thing that bothers me is that I can't get an inventory of everything I'd be losing in closing the account - I've saved:
+
+- Everything I could from my shell users (where the web filesystem hosting lives)
+- All my SQL databases
+- All my emails (transferred to FastMail)
+
+but I can't be sure I'm not losing, say, a key DNS record that Id' want to replicate somewhere else. (I actually did transfer one domain out of Dreamhost's DNS, [right in time][], by coincidence.)
+
+[right in time]: https://www.dreamhoststatus.com/pages/incident/575f0f606826303142000510/5a92277771c69104dd0bdabb
 
 ## The WELL
 
@@ -109,21 +130,57 @@ Having had this note as a standing part of my Planfile for a few weeks now, I go
 >
 > PS - I just looked at the Stewart Brand Rolling Stone article you posted - very cool! I just posted a pointer to it in The WELL's News conference, so be prepared for literally dozens of views...
 
-I had a little trouble with the invite link (we had to go back and forth three times before it worked), but I've got my account set up now: once I've got a little room to breathe (hopefully tomorrow), I'll be logging on and checking out the conversation.
+I had a little trouble with the invite link (we had to go back and forth three times before it worked), but I've got my account set up now.
+
+I'll be logging on and checking out the conversation tomorrow (having put this off for a full month out of sheer depression).
 
 ## Boring personal developments
 
-I gained a *lot* of weight on vacation (like, nearly twenty pounds). It left me pretty depressed, through the weekend and into today. However, I've stocked back up on Keto-appropriate groceries, and am looking forward to doing the best I can to get back to where I was (and, next time I go on vacation, I'm not going to indulge *nearly* as much).
-
-Just before I left, I got [a new router][TP-Link Archer AC1750] which supports faster 802.11ac speeds and I believe supports OpenWRT, should I ever choose to go that route (no pun intended): I'm planning on setting that up this week.
+I set up [my new router][TP-Link Archer AC1750] on Friday night. I've got it set up with an [NFC tag][] for connecting to the 5 GHz network, but unlike my previous router, I haven't printed the password or QR codes for visitors to connect with (as that could potentially be leaked in the background of a photo in the apartment, which could feasibly be used to access the network from outside).
 
 [TP-Link Archer AC1750]: https://www.amazon.com/gp/product/B00BUSDVBQ/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1
+[NFC tag]: https://www.amazon.com/gp/product/B00KSR0636/
+
+I've also connected my cable to the router via an Ethernet cable (the one that came with my Xbox 360, whose location is unknown to this day), as it has full Gigabit Ethernet support (not that I *really* need it). This means I can finally stop using the Wi-Fi dongle that doesn't have a module in the mainline Linux kernel tree, which has been causing [massive headaches][stushiba petlog 2017-12-05] when I try to boot into Linux. (I've got a note somewhere on all the independent contributors I'd want to coordinate on a patch to get the driver for this *into* the kernel tree: I still might try to do that.)
+
+[stushiba petlog 2017-12-05]: https://github.com/stuartpb/petlogs/blob/master/petlog-stushiba.md#2017-12-05
+
+I've also set it up for a Dynamic DNS record through NoIP on zapto.org. (It's annoying that the stock formware only supports TP-LINK's DDNS service, DynDNS, and NoIP, and not a specifiable endpoint like [DNS-O-Matic][].
+
+[DNS-O-Matic]: https://dnsomatic.com/
+
+### Fitness
+
+I just opened a Google search to start looking at developing a weight-lifting regimen in earnest. I'm looking at https://www.nerdfitness.com/blog/strength-training-101/ right now: the prospect of having to learn all these bioengineering terms like "sarcoplasmic hypertrophy" in order to have the adequate soup-to-nuts understanding of biochemistry that I want is just *exasperating*. I'm starting to appreciate why I like software engineering: it's dealing with stuff that *humans consciously made*, not prehistoric molecular phenomena named by ancient Greek physicians thousands of years ago without any grasp of the evolutionary mechanisms behind it. *Fuuuuuck.*
+
+Mechanics aside, one of the big things for me is having a clear podcast schedule I can listen to as I do fitness stuff: right now, I'm looking at getting into [Small Beans][]; ideally, I'd be working out frequently enough that I'd be up-top-date, and could listen to [My Brother, My Brother, and Me][] from the beginning, so I can be caught up on all this McElroy comedy everybody's talking about.
+
+[Small Beans]: https://itunes.apple.com/us/podcast/small-beans/id1323252647?mt=2&i=1000403555363
+[My Brother, My Brother, and Me]: http://podbay.fm/show/367330921
+
+### Luigi's Balloon World
+
+I hid a balloon in every kingdom as soon as the Luigi update to Super Mario Odyssey was released. They've all been popped by now, but here are the codes for anybody who wants to try finding them (if it works that way, I honestly don't know):
+
+- Mushroom Kingdom: 007 LYW C6L
+- Cap Kingdom: 006 70T CBM
+- Cascade Kingdom: 006 FYY 728
+- Sand Kingdom: 008 HGC JG3
+- Lake Kingdom: 003 88N TBW
+- Wooded Kingdom: 006 GY6 2JY
+- Lost Kingdom: 008 DDJ P4V
+- Metro Kingdom: 008 9GM PCK
+- Seaside Kingdom: 002 818 NGV
+- Snow Kingdom: 003 C2M KC7
+- Luncheon Kingdom: 000 C78 VYV
+- Bowser's Kingdom: 008 K90 M1G
+- Moon Kingdom: 007 L0L HMM [(yes, really)](https://twitter.com/stuartpb/status/968346854378393600)
 
 # Schedule
 
-I'm generally available at any time Monday through Friday from noon to P6:00 Pacific time, with the exception of one fixed appointment on Wednesdays from P2:30-P3:30 Pacific time.
+I'm generally available at any time Monday through Friday from noon to P6:00 Pacific time, with the exception of one fixed appointment every other Wednesday (counting from February 28) from P2:30-P3:30 Pacific time.
 
-I had been scheduled to give [a talk on CouchDB that I had proposed for SeattleJS two and a half years ago](https://github.com/seattlejs/seattlejs/issues/38) on 2018-02-08, but ended up being out-of-town for: it's not clear what's going to happen there (the organizers never got back to me).
+I had been scheduled to give [a talk on CouchDB that I had proposed for SeattleJS two and a half years ago](https://github.com/seattlejs/seattlejs/issues/38) on 2018-02-08, but ended up being out-of-town for: it's been rescheduled for May.
 
 Another presentation I almost attempted to give when I was out of town (before realizing and getting it moved down a month) is a brief story I'm planning to tell at an Open Mic night in [The Royal Room][] in Seattle's Columbia City at P8:30 on 2018-03-08, about watching someone completely fail at [the Disney World version of *Who Wants to Be a Millionaire?*][WWTBAMPI] many years ago. This will be my first time going up on stage to give a completely non-technical monologue since at *least* high school, so if you're in the neighborhood, feel free to come down and watch.
 
